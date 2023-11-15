@@ -80,6 +80,7 @@ int main(void)
   	  lcd_set_cursor(0, 0);
   	  lcd_write_string("BPM: ");
   	  lcd_set_cursor(1, 0);
+  	  HAL_GPIO_TogglePin(GPIOA, LD2_Pin);
   	  //lcd_write_string(pulseData);//is this how you do it?
   	  //lcd_write_string(int_to_str);
   	  //count++;
